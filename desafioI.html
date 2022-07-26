@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Apostila JavaScript Progressivo</title>
+   <script type="text/javascript" src="script.js"></script>
+ </head>
+ <body>
+   <input id="num" type="number" /> <br />
+   <button onclick="primo()">Testar</button><br />
+   <div id="resposta">
+ <script>
+
+     function primo(){
+      var numero = parseInt(document.getElementById('num').value);
+      var resposta = document.getElementById('resposta');
+      var divisores=0;
+
+      for(var count=1 ; count<=numero ; count++)
+      
+      if(numero % count == 0) {
+        divisores++;
+      }
+     
+      if(divisores==2) {
+        resposta.innerHTML=`O número é primo!`;
+      }
+      else{
+        resposta.innerHTML=`O número não é primo!`;
+      }
+    }
+ </script>
+
+
+ </body>
+</html>
+
+
+
