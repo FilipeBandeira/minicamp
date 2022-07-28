@@ -1,0 +1,50 @@
+<!-- <html>
+<script>
+    function exibirPrimos(limite){
+    
+
+        for(let numero = 2; numero <= limite; numero++){
+            let ehPrimo = true
+    
+            for(let divisor = 2; divisor < numero; divisor++){
+                if(numero % divisor === 0){
+    
+                    ehPrimo = false
+                    break;
+                    }
+                }
+    
+           if(ehPrimo) {
+            console.log(numero)
+           }
+        }
+    
+    }
+</Script>
+</html> -->
+
+<html>
+  <script>
+    function verificaNumeroPrimo(num) {
+      if (num === 2) {
+        console.log(`O número ${num} é primo.`)
+      } else if (num > 1) {
+        for (var i = 2; i < num; i++) {
+          if (num % i !== 0) {
+            console.log(`O número ${num} é primo.`)
+            break;
+          } else if (num === i * i) {
+            console.log(`O número ${num} não é primo.`)
+            break;
+          } else {
+            console.log(`O número ${num} não é primo.`)
+            break;
+          }
+        }
+      } else {
+        console.log(`O número ${num} não é primo.`)
+      }
+    }
+
+  </script>
+</html>

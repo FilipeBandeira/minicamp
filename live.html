@@ -1,0 +1,37 @@
+<html>
+<script>
+    function verificaDivisivel(numero){
+
+        if (numero % 3 === 0 || numero % 5 === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function verificaIntervalo(inicial, final) {
+        
+        var contador = 0;
+        var soma = 0;
+        var multiplicacao = 1;
+        
+        for (var i= inicial; i <= final; i = i + 1) {
+            if (verificaDivisivel(i)) {
+                // console.log(i);
+                // contador = contador + 1 è igual a contador++
+                contador++;
+                soma += i;
+                //soma += i é igual a soma = soma + i
+                multiplicacao *= i;
+            }
+        }
+        console.log('Quantidade de valores:' + contador);
+        console.log('A soma é:' + soma);
+        console.log('A multiplicação é:' + multiplicacao);
+    }
+        
+
+
+
+</script>
+</html>
