@@ -1,2 +1,2 @@
-# minicamp-XPe
- Minicamp Dev & Data - XPe
+# Minicamp-XPe
+ Exercícios e projetos realizados no Minicamp Dev & Data - XPe
